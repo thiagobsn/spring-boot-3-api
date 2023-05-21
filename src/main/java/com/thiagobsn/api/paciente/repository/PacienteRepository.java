@@ -1,4 +1,4 @@
-package com.thiagobsn.api.paciente.dto;
+package com.thiagobsn.api.paciente.repository;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

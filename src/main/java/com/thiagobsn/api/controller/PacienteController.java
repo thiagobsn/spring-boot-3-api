@@ -3,7 +3,6 @@ package com.thiagobsn.api.controller;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.repository.support.Repositories;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -20,8 +19,8 @@ import com.thiagobsn.api.paciente.dto.DadosAtualizacaoPaciente;
 import com.thiagobsn.api.paciente.dto.DadosCadastroPaciente;
 import com.thiagobsn.api.paciente.dto.DadosDetalhamentoPaciente;
 import com.thiagobsn.api.paciente.dto.DadosListagemPaciente;
-import com.thiagobsn.api.paciente.dto.PacienteRepository;
 import com.thiagobsn.api.paciente.entity.Paciente;
+import com.thiagobsn.api.paciente.repository.PacienteRepository;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

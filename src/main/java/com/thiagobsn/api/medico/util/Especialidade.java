@@ -1,4 +1,4 @@
-package com.thiagobsn.api.medico;
+package com.thiagobsn.api.medico.util;
 
 public enum Especialidade {
 

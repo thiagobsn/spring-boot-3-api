@@ -1,4 +1,4 @@
-package com.thiagobsn.api.medico.dto;
+package com.thiagobsn.api.domain.medico.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

@@ -1,6 +1,6 @@
-package com.thiagobsn.api.medico.entity;
+package com.thiagobsn.api.domain.medico.entity;
 
-import com.thiagobsn.api.medico.dto.DadosEndereco;
+import com.thiagobsn.api.domain.medico.dto.DadosEndereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

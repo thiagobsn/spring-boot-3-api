@@ -1,6 +1,6 @@
-package com.thiagobsn.api.paciente.dto;
+package com.thiagobsn.api.domain.paciente.dto;
 
-import com.thiagobsn.api.paciente.entity.Paciente;
+import com.thiagobsn.api.domain.paciente.entity.Paciente;
 
 public record DadosListagemPaciente(Long id, String nome, String email, String telefone, String CPF) {
 

@@ -1,6 +1,6 @@
-package com.thiagobsn.api.medico.dto;
+package com.thiagobsn.api.domain.medico.dto;
 
-import com.thiagobsn.api.medico.util.Especialidade;
+import com.thiagobsn.api.domain.medico.util.Especialidade;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
@@ -14,7 +14,7 @@ public record DadosCadastroMedico(
     String nome, 
 
     @NotBlank
-    @Email
+    @Email(message = "{erro.email}")
     String email,
 
     @NotBlank

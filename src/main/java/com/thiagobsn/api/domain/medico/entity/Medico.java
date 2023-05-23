@@ -1,8 +1,8 @@
-package com.thiagobsn.api.medico.entity;
+package com.thiagobsn.api.domain.medico.entity;
 
-import com.thiagobsn.api.medico.dto.DadosAtualizacaoMedico;
-import com.thiagobsn.api.medico.dto.DadosCadastroMedico;
-import com.thiagobsn.api.medico.util.Especialidade;
+import com.thiagobsn.api.domain.medico.dto.DadosAtualizacaoMedico;
+import com.thiagobsn.api.domain.medico.dto.DadosCadastroMedico;
+import com.thiagobsn.api.domain.medico.util.Especialidade;
 
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;

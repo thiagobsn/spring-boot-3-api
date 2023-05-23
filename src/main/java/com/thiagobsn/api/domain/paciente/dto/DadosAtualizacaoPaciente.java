@@ -1,6 +1,6 @@
-package com.thiagobsn.api.paciente.dto;
+package com.thiagobsn.api.domain.paciente.dto;
 
-import com.thiagobsn.api.medico.dto.DadosEndereco;
+import com.thiagobsn.api.domain.medico.dto.DadosEndereco;
 
 import jakarta.validation.constraints.NotNull;
 

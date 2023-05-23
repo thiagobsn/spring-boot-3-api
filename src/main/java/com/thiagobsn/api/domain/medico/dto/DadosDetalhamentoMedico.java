@@ -1,8 +1,8 @@
-package com.thiagobsn.api.medico.dto;
+package com.thiagobsn.api.domain.medico.dto;
 
-import com.thiagobsn.api.medico.entity.Endereco;
-import com.thiagobsn.api.medico.entity.Medico;
-import com.thiagobsn.api.medico.util.Especialidade;
+import com.thiagobsn.api.domain.medico.entity.Endereco;
+import com.thiagobsn.api.domain.medico.entity.Medico;
+import com.thiagobsn.api.domain.medico.util.Especialidade;
 
 public record DadosDetalhamentoMedico(Long id, String nome, String email, String telefone, String crm,
         Especialidade especialidade, Endereco endereco) {

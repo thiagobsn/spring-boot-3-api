@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.thiagobsn.api.medico.dto.DadosAtualizacaoMedico;
-import com.thiagobsn.api.medico.dto.DadosCadastroMedico;
-import com.thiagobsn.api.medico.dto.DadosDetalhamentoMedico;
-import com.thiagobsn.api.medico.dto.DadosListagemMedicos;
-import com.thiagobsn.api.medico.entity.Medico;
-import com.thiagobsn.api.medico.repository.MedicoRepository;
+import com.thiagobsn.api.domain.medico.dto.DadosAtualizacaoMedico;
+import com.thiagobsn.api.domain.medico.dto.DadosCadastroMedico;
+import com.thiagobsn.api.domain.medico.dto.DadosDetalhamentoMedico;
+import com.thiagobsn.api.domain.medico.dto.DadosListagemMedicos;
+import com.thiagobsn.api.domain.medico.entity.Medico;
+import com.thiagobsn.api.domain.medico.repository.MedicoRepository;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

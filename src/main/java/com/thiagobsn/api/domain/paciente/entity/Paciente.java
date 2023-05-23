@@ -1,8 +1,8 @@
-package com.thiagobsn.api.paciente.entity;
+package com.thiagobsn.api.domain.paciente.entity;
 
-import com.thiagobsn.api.medico.entity.Endereco;
-import com.thiagobsn.api.paciente.dto.DadosAtualizacaoPaciente;
-import com.thiagobsn.api.paciente.dto.DadosCadastroPaciente;
+import com.thiagobsn.api.domain.medico.entity.Endereco;
+import com.thiagobsn.api.domain.paciente.dto.DadosAtualizacaoPaciente;
+import com.thiagobsn.api.domain.paciente.dto.DadosCadastroPaciente;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

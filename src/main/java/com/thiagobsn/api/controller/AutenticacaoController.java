@@ -8,7 +8,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.thiagobsn.api.conf.TokenService;
+import com.thiagobsn.api.domain.medico.dto.DadosTokenJWT;
 import com.thiagobsn.api.domain.usuario.dto.DadosAutenticacao;
+import com.thiagobsn.api.domain.usuario.entity.Usuario;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -20,13 +23,17 @@ public class AutenticacaoController {
 
     private final AuthenticationManager authenticationManager;
 
+    private final TokenService tokenService;
+
     @PostMapping
-    public ResponseEntity<?> efetuarLogin(@Valid @RequestBody DadosAutenticacao dadosAutenticacao) {
+    public ResponseEntity<DadosTokenJWT> efetuarLogin(@Valid @RequestBody DadosAutenticacao dadosAutenticacao) {
 
-        var token = new UsernamePasswordAuthenticationToken(dadosAutenticacao.login(), dadosAutenticacao.senha());
-        var authentication = authenticationManager.authenticate(token);
+        var authenticationToken = new UsernamePasswordAuthenticationToken(dadosAutenticacao.login(), dadosAutenticacao.senha());
+        var authentication = authenticationManager.authenticate(authenticationToken);
 
-        return ResponseEntity.ok().build();
+        var tokenJWT = tokenService.gerarToken((Usuario) authentication.getPrincipal());
+
+        return ResponseEntity.ok(new DadosTokenJWT(tokenJWT));
     }
     
 }

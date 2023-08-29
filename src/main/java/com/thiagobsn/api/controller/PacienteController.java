@@ -22,11 +22,13 @@ import com.thiagobsn.api.domain.paciente.dto.DadosListagemPaciente;
 import com.thiagobsn.api.domain.paciente.entity.Paciente;
 import com.thiagobsn.api.domain.paciente.repository.PacienteRepository;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("pacientes")
+@SecurityRequirement(name = "bearer-key")
 @RequiredArgsConstructor
 public class PacienteController {
 

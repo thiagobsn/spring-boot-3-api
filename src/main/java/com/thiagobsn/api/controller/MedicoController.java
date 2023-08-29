@@ -21,11 +21,13 @@ import com.thiagobsn.api.domain.medico.dto.DadosListagemMedicos;
 import com.thiagobsn.api.domain.medico.entity.Medico;
 import com.thiagobsn.api.domain.medico.repository.MedicoRepository;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("medicos")
+@SecurityRequirement(name = "bearer-key")
 @RequiredArgsConstructor
 public class MedicoController {
 

@@ -3,10 +3,10 @@ package com.thiagobsn.api.controller;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.thiagobsn.api.conf.TokenService;
 import com.thiagobsn.api.domain.medico.dto.DadosTokenJWT;
@@ -16,9 +16,9 @@ import com.thiagobsn.api.domain.usuario.entity.Usuario;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor
-@Controller
+@RestController
 @RequestMapping("/login")
+@RequiredArgsConstructor
 public class AutenticacaoController {
 
     private final AuthenticationManager authenticationManager;
